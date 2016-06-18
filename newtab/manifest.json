@@ -1,0 +1,11 @@
+{
+  "name": "The New App Launcher",
+  "description": "Launches apps, the good way!",
+  "version": "0.0.0.1",
+  "manifest_version":2,
+  "content_security_policy": "script-src 'self' 'unsafe-inline'; object-src 'self'",
+  "permissions" : ["management"],
+  "chrome_url_overrides" : {
+    "newtab": "newtab.html"
+  }
+}
