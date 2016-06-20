@@ -7,7 +7,8 @@
             font-family: 'Helvetica Neue';
             font-weight: lighter;
             text-align: center;
-            margin-top: 10%;
+            margin-top: 15%;
+            margin-bottom: 0;
             position: relative;
         }
         .datetime sup, .datetime sub{
@@ -23,10 +24,28 @@
             bottom:.45em;
             font-size: .35em;
         }
+        input.go{
+            width: 50%;
+            padding: .5em;
+            font-size:1.5em;
+            color:#666;
+            position: relative;
+            left: 50%;
+            margin-left: -25%;
+            border-radius: 5px;
+            border:none;
+            box-shadow: 1px 1px 6px rgba(0,0,0,.35);
+        }
+        input:focus, input:active{
+            border:none;
+            outline-color: #666;
+
+        }
     </style>
     <script type="text/javascript" src="main.js"></script>
 </head>
 <body>
 <h1 class="datetime"></h1>
+<input class="go" autofocus="autofocus" type="text" />
 </body>
 </html>

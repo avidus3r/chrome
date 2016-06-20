@@ -31,5 +31,14 @@ document.addEventListener('DOMContentLoaded', function(){
     document.body.style.backgroundRepeat = 'no-repeat';
     document.body.style.backgroundSize = '100% auto';
     document.body.style.color = '#fff';
+
+
+    var input = document.querySelector('.go');
+    input.addEventListener('keydown',function(e){
+        if(e.which === 13){
+            window.location = 'https://www.google.com/webhp?ion=1&espv=2&ie=UTF-8#safe=off&q=' + input.value;
+        }
+    });
+
     startTime();
 });
