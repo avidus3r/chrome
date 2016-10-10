@@ -1,0 +1,13 @@
+# OS or Editor folders
+.idea
+.DS_Store
+.cache
+.project
+.settings
+.tmproj
+
+#protected files
+*.pem
+
+#build files
+*.crx

@@ -7,6 +7,11 @@ function startTime() {
     m = checkTime(m);
     s = checkTime(s);
 
+    if(h === 12){
+        h = h;
+        meridian = "PM"
+    }
+
     if(h > 12){
         h = h-12;
         meridian = "PM"
@@ -32,6 +37,9 @@ document.addEventListener('DOMContentLoaded', function(){
     document.body.style.backgroundSize = '100% auto';
     document.body.style.color = '#fff';
 
+    document.addEventListener('keyup', function(e){
+        console.log(e.which);
+    });
 
     var input = document.querySelector('.go');
     input.addEventListener('keydown',function(e){
